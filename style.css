@@ -1,9 +1,16 @@
 :root {
     color-scheme: light only;
+    --page-bg: #ff0000;
+    --stripe-light: #ffffff;
+    --stripe-dark: #a12626;
+    --text-color: #111111;
 }
 
 html {
-    background-color: #ff0000;
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -11,17 +18,19 @@ body {
     margin: 0;
     padding: 0;
     min-height: 200vh;
-    background-color: #ff0000;
+    background-color: var(--page-bg);
     background-image: repeating-linear-gradient(
         90deg,
-        #ffffff 0,
-        #ffffff 60px,
-        #a12626 60px,
-        #9b1f1f 100px
+        var(--stripe-light) 0,
+        var(--stripe-light) 60px,
+        var(--stripe-dark) 60px,
+        var(--stripe-dark) 100px
     );
     background-size: 100% 100%;
-    color: #111111;
-    -webkit-text-fill-color: #111111;
+    color: var(--text-color);
+    -webkit-text-fill-color: var(--text-color);
+    background-attachment: scroll;
+    forced-color-adjust: none;
 }
 
 .top-bar {
@@ -78,15 +87,15 @@ body {
     }
 
     html, body {
-        background-color: #ff0000;
+        background-color: var(--page-bg);
         background-image: repeating-linear-gradient(
             90deg,
-            #ffffff 0,
-            #ffffff 60px,
-            #a12626 60px,
-            #9b1f1f 100px
+            var(--stripe-light) 0,
+            var(--stripe-light) 60px,
+            var(--stripe-dark) 60px,
+            var(--stripe-dark) 100px
         );
-        color: #111111;
+        color: var(--text-color);
     }
 
     .top-bar {
