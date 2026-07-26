@@ -1,3 +1,15 @@
 body {
     font-family: 'Minecraft', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 200vh;
+}
+
+.top-right-logo {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 120px;
+    height: auto;
+    z-index: 1000;
 }
