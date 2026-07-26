@@ -9,7 +9,7 @@ html {
 body {
     font-family: 'Minecraft', sans-serif;
     margin: 0;
-    padding: 20px 140px 20px 20px;
+    padding: 0;
     min-height: 200vh;
     background-color: #ff0000;
     background-image: repeating-linear-gradient(
@@ -21,33 +21,92 @@ body {
     );
     background-size: 100% 100%;
     color: #111111;
+    -webkit-text-fill-color: #111111;
 }
 
-h1, h2, a {
-    max-width: calc(100% - 140px);
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ff0000;
+    color: white;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #000000;
+    line-height: 1;
+    flex: 1;
+}
+
+.content {
+    padding: 100px 20px 20px 20px;
+}
+
+.content h2 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    text-shadow: none;
+}
+
+.content a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .top-right-logo {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 120px;
+    width: 70px;
     height: auto;
-    z-index: 1000;
+    z-index: 1002;
+    margin-left: 10px;
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 140px 20px 20px 20px;
+    :root {
+        color-scheme: light only;
     }
 
-    h1, h2, a {
-        max-width: 100%;
+    html, body {
+        background-color: #ff0000;
+        background-image: repeating-linear-gradient(
+            90deg,
+            #ffffff 0,
+            #ffffff 60px,
+            #a12626 60px,
+            #9b1f1f 100px
+        );
+        color: #111111;
+    }
+
+    .top-bar {
+        min-height: 56px;
+        padding: 6px 10px;
+    }
+
+    .top-bar h1 {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        padding-top: 90px;
+    }
+
+    .content h2 {
+        font-size: 1.1rem;
     }
 
     .top-right-logo {
-        width: 90px;
-        top: 10px;
-        right: 10px;
+        width: 50px;
     }
 }
