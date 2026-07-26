@@ -1,3 +1,7 @@
+:root {
+    color-scheme: light only;
+}
+
 body {
     font-family: 'Minecraft', sans-serif;
     margin: 0;
@@ -12,6 +16,7 @@ body {
         #9b1f1f 100px
     );
     background-size: 100% 100%;
+    color: #111111;
 }
 
 .top-right-logo {
