@@ -22,3 +22,15 @@ body {
     height: auto;
     z-index: 1000;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 140px;
+    }
+
+    .top-right-logo {
+        width: 90px;
+        top: 10px;
+        right: 10px;
+    }
+}
