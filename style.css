@@ -2,10 +2,14 @@
     color-scheme: light only;
 }
 
+html {
+    background-color: #ff0000;
+}
+
 body {
     font-family: 'Minecraft', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 20px 140px 20px 20px;
     min-height: 200vh;
     background-color: #ff0000;
     background-image: repeating-linear-gradient(
@@ -19,6 +23,10 @@ body {
     color: #111111;
 }
 
+h1, h2, a {
+    max-width: calc(100% - 140px);
+}
+
 .top-right-logo {
     position: fixed;
     top: 15px;
@@ -30,7 +38,11 @@ body {
 
 @media (max-width: 600px) {
     body {
-        padding-top: 140px;
+        padding: 140px 20px 20px 20px;
+    }
+
+    h1, h2, a {
+        max-width: 100%;
     }
 
     .top-right-logo {
