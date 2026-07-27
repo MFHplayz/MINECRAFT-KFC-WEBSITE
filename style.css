@@ -57,6 +57,13 @@ body {
     flex: 1;
 }
 
+.content p {
+    background-color: #ffffffff;
+    border: 2px solid #000000;
+    padding: 10px;
+    font-size: 18px;
+}
+
 .content {
     padding: 100px 20px 20px 20px;
 }
@@ -66,12 +73,20 @@ body {
     font-size: 1.5rem;
     margin-bottom: 12px;
     text-shadow: none;
+    background-color: #ffffffff;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-right: 80%;
 }
 
 .content a {
     color: #000000;
     font-weight: bold;
     text-decoration: underline;
+    background-color: #ffffffff;
+    border: 2px solid #000000;
+    padding: 10px;
+    font-size: 18px;
 }
 
 .top-right-logo {
