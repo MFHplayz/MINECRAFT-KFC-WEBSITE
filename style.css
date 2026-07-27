@@ -329,45 +329,96 @@ body {
     }
 
     .top-bar {
-        min-height: 56px;
-        padding: 6px 10px;
+        min-height: 64px;
+        padding: 8px 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .top-bar h1 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
+        line-height: 1.2;
     }
 
     .top-nav {
         width: 100%;
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-top: 6px;
+        gap: 6px;
     }
 
     .nav-link {
-        font-size: 0.85rem;
-        padding: 5px 8px;
+        font-size: 0.8rem;
+        padding: 6px 8px;
     }
 
     .content {
-        padding-top: 90px;
+        padding: 110px 12px 24px;
     }
 
     .hero-card {
         grid-template-columns: 1fr;
-        padding: 18px;
+        padding: 16px;
+        box-shadow: 4px 4px 0 #000000;
     }
 
     .hero-copy h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .hero-copy p {
+        font-size: 0.95rem;
+    }
+
+    .hero-actions {
+        gap: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .feature-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 16px;
+    }
+
+    .feature-card,
+    .gallery-panel {
+        padding: 14px;
     }
 
     .animal-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .image-viewer {
+        margin-top: 12px;
+    }
+
+    .viewer-controls {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .viewer-controls button {
+        width: 100%;
+        padding: 8px 10px;
     }
 
     .top-right-logo {
-        width: 50px;
+        width: 44px;
+        margin-left: 0;
+        position: absolute;
+        right: 10px;
+        top: 8px;
     }
 }
