@@ -18,15 +18,47 @@
 
 <body>
     <div class="top-bar">
-        <h1>Minecraft KFC</h1>
-        <img src="IMAGES/kfc_logo.png" alt="KFC logo" class="top-right-logo">
+        <a class="site-title-link" href="index.html">
+            <h1>Minecraft KFC</h1>
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="map-download.html">Download Map</a>
+            <a class="nav-link" href="about-contact.html">About/Contact</a>
+        </nav>
+        <img src="IMAGES/kfc_logo.png" alt="KFC logo" title="KFC logo" class="top-right-logo">
     </div>
-    <div class="content">
-        <h2>Join us at minecraft kfc!</h2>
-        <p>Welcome to the official Minecraft KFC website! Here, you can explore our virtual KFC restaurant and learn about our menu items. 
-        Our team is dedicated to providing you with a unique and immersive experience.
-        Whether you're a fan of our delicious cooked chicken or just looking for a fun adventure, we've got something for everyone. So come on in and enjoy the taste of KFC in the blocky world of Minecraft!</p>
-        <a href="https://www.kfc.com/" target="_blank">Click here to visit KFC's official website!</a>
+    <div class="content" id="home">
+        <section class="hero-card">
+            <div class="hero-copy">
+                <p class="eyebrow">Official Minecraft Experience</p>
+                <h2>Join us at Minecraft KFC!</h2>
+                <p>Welcome to the official Minecraft KFC website! Here, you can explore our virtual KFC restaurant and learn about our menu items. Our team is dedicated to providing you with a unique and immersive experience. Whether you're a fan of our delicious cooked chicken or just looking for a fun adventure, we've got something for everyone.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="gallery.html">View Gallery</a>
+                    <a class="btn btn-secondary" href="about-contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="IMAGES/Outside.png" alt="Minecraft KFC exterior view">
+            </div>
+        </section>
+
+        <section class="feature-grid">
+            <article class="feature-card">
+                <h3>Explore the Build</h3>
+                <p>See the blocky restaurant design and immersive scenes that bring KFC to Minecraft.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Meet the Team</h3>
+                <p>Learn about the people behind the experience and the community we are building.</p>
+            </article>
+            <article class="feature-card">
+                <h3>Stay Connected</h3>
+                <p>Visit our other pages for jobs, animal rights updates, and ways to get in touch.</p>
+            </article>
+        </section>
         
     </div>
     <script src="script.js"></script>
